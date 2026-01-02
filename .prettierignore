@@ -1,0 +1,12 @@
+# Ignore artifacts:
+build
+coverage
+dist
+coverage
+node_modules
+
+# Ignore system files:
+.DS_Store
+.env
+.gitignore
+.github/8
