@@ -35,7 +35,5 @@
     }
   }
 
-  .animate-slow-zoom {
-    animation: slow-zoom 1.5s ease-out forwards;
-  }
+  --animate-slow-zoom: slow-zoom 1.5s ease-out forwards;
 }
