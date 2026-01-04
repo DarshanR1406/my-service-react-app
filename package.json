@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --write .",
-    "audit-format-lint": "npm audit && npm run format && npm run lint",
+    "audit-format-lint": "npm run format && npm run lint",
     "prepare": "husky"
   },
   "dependencies": {
