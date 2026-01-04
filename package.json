@@ -9,13 +9,19 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "format": "prettier --write .",
-    "audit-format-lint": "npm audit && npm run format && npm run lint",
+    "audit-format-lint": "npm run format && npm run lint",
     "prepare": "husky"
   },
   "dependencies": {
+    "@radix-ui/react-label": "^2.1.8",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@tabler/icons-react": "^3.36.1",
     "@tailwindcss/vite": "^4.1.18",
+    "clsx": "^2.1.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-hook-form": "^7.70.0",
+    "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {

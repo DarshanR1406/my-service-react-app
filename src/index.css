@@ -1,20 +1,39 @@
 @import 'tailwindcss';
 
 :root {
-  --custom-primary: 37 99 235;
+  /* Ocean Blue/Cyan (Matches the central App/Technology in the image) */
+  --custom-primary: 8 145 178;
+  /* Clean White background */
   --custom-bg: 255 255 255;
-  --custom-text: 17 24 39;
+  /* Dark Slate for text */
+  --custom-text: 15 23 42;
 }
 
 /* Dark theme */
 .dark {
-  --custom-primary: 96 165 250;
-  --custom-bg: 17 24 39;
-  --custom-text: 243 244 246;
+  /* Bright Cyan for dark mode */
+  --custom-primary: 34 211 238;
+  /* Deep Slate background */
+  --custom-bg: 15 23 42;
+  /* Off-white text */
+  --custom-text: 248 250 252;
 }
 
 @theme {
   --color-custom-primary: rgb(var(--custom-primary));
   --color-custom-bg: rgb(var(--custom-bg));
   --color-custom-text: rgb(var(--custom-text));
+
+  @keyframes slow-zoom {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  --animate-slow-zoom: slow-zoom 1.5s ease-out forwards;
 }
